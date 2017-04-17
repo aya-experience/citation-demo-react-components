@@ -1,0 +1,7 @@
+{
+	"extends": [
+		"../citation/.eslintrc.json",
+		"xo/browser",
+		"xo-react"
+	]
+}
