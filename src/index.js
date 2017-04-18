@@ -1,26 +1,19 @@
-/* global process */
+import Component1 from './Component1';
+import Component2 from './Component2';
+import Component3 from './Component3';
+import ComponentList from './common/ComponentList';
+import PageOrComponent from './common/PageOrComponent';
+import Banner from './home/Banner';
+import Home from './home/Home';
+import TopMenu from './home/TopMenu';
 
-import 'babel-polyfill';
-
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom';
-
-import CitationRouter from 'citation-react-router';
-import components from './components';
-import './index.css';
-
-let serverUrl;
-
-if (process && process.env && process.env.NODE_ENV === 'development') {
-	serverUrl = 'http://localhost:4000/graphql';
-} else {
-	serverUrl = '/graphql';
-}
-
-ReactDOM.render(
-	<BrowserRouter>
-		<CitationRouter serverUrl={serverUrl} components={components}/>
-	</BrowserRouter>,
-	document.getElementById('root')
-);
+export default {
+	Component1,
+	Component2,
+	Component3,
+	ComponentList,
+	PageOrComponent,
+	TopMenu,
+	Banner,
+	Home
+};
