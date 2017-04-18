@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 
-import './Banner.css';
+// import './Banner.css';
 
 const icons = ['js', 'content', 'deploy'];
 
