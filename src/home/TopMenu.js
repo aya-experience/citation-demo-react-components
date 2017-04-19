@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import {Link} from 'react-router-dom';
 
-// import './TopMenu.css';
+import './TopMenu.css';
 
 const TopMenu = ({pages, data}) => {
 	const home = pages.filter(page => page.__id__ === 'home')[0];
