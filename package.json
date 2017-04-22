@@ -5,7 +5,8 @@
   "scripts": {
     "lint": "../citation/node_modules/.bin/eslint src",
     "dev": "BABEL_ENV=development babel src -d lib --watch",
-    "build": "BABEL_ENV=production babel src -d lib && cp -r src/* lib",
+    "prebuild": "rm -rf lib && mkdir lib && cp -r src/* lib",
+    "build": "BABEL_ENV=production babel src -d lib",
     "test": "BABEL_ENV=development ava --verbose"
   },
   "dependencies": {
