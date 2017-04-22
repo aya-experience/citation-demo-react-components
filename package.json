@@ -1,5 +1,5 @@
 {
-  "name": "citation-demo",
+  "name": "citation-demo-react-components",
   "version": "0.2.0",
   "main": "lib/index.js",
   "scripts": {
