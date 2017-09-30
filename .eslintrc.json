@@ -1,7 +1,20 @@
 {
-	"extends": [
-		"../citation/.eslintrc.json",
-		"xo/browser",
-		"xo-react"
-	]
+	"parser": "babel-eslint",
+	"extends": ["xo/esnext", "prettier", "xo/browser", "xo-react"],
+	"plugins": ["import", "prettier"],
+	"rules": {
+		"prettier/prettier": [
+			"error",
+			{ "printWidth": 100, "useTabs": true, "singleQuote": true }
+		],
+		"object-curly-spacing": ["error", "always"],
+		"react/jsx-tag-spacing": [
+			"error",
+			{
+				"closingSlash": "never",
+				"beforeSelfClosing": "always",
+				"afterOpening": "never"
+			}
+		]
+	}
 }
